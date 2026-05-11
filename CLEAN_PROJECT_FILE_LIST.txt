@@ -1,0 +1,39 @@
+Needed files only for the final CPU-only distributed FastAPI + ChromaDB project
+
+KEEP:
+- README.md
+- requirements.txt
+- ingest.py
+- main_scheduler.py
+- main_worker.py
+- common/models.py
+- client/load_generator.py
+- lb/load_balancer.py
+- llm/inference.py
+- master/scheduler.py
+- scheduler/api.py
+- workers/api.py
+- workers/worker.py
+- rag/document_loader.py
+- rag/chunker.py
+- rag/vector_store.py
+- rag/ingest.py
+- rag/retriever.py
+- documents/
+- vector_db/
+
+REMOVED / NOT NEEDED:
+- main.py
+- workers/worker_server.py
+- workers/gpu_worker.py
+- rag/knowledge_base.py
+- rag/indexer.py
+- rag/embeddings.npy
+- rag/chunks.pkl
+
+Notes:
+- The old ThreadingHTTPServer worker was removed.
+- The old sklearn/NumPy vector index was removed.
+- The hardcoded knowledge_base.py was removed.
+- CUDA/NVIDIA-specific code was removed.
+- Worker IDs are 1, 2, 3, 4.

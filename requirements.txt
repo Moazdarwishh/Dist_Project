@@ -1,0 +1,23 @@
+# FastAPI services
+fastapi>=0.110.0
+uvicorn[standard]>=0.27.0
+pydantic>=2.0.0
+
+# HTTP client / load testing
+httpx>=0.25.0
+requests>=2.31.0
+
+# LLM inference
+transformers>=4.40.0
+torch>=2.0.0
+sentencepiece>=0.1.99
+
+# RAG embeddings + vector database
+sentence-transformers>=2.5.0
+chromadb>=0.4.24
+numpy>=1.24.0
+
+# Real document ingestion
+pypdf>=4.0.0
+python-docx>=1.1.0
+tqdm>=4.66.0
